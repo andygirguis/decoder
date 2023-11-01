@@ -3,7 +3,7 @@ def encode(password: str) -> str:
     encoded = []
     for char in password:
         if char.isdigit():
-            # Increment the number by 3 and take modulo 10 to wrap around between 0-9
+            # Increment the number by 3 and take modulo 10 to wrap around beteen 0-9
             encoded_char = str((int(char) + 3) % 10)
         else:
             encoded_char = char  # If it's not a digit, keep it unchanged
